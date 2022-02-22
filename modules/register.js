@@ -1,7 +1,10 @@
 const argon2 = require('argon2')
 const axios = require('axios')
+const { sheet_post } = require('../connect_service/google-sheet')
 
 const Register = async (req, res) => {
+	let date = new Date().toLocaleDateString()
+	let time = new Date().toLocaleTimeString()
 	const obj = JSON.stringify({
 		username: req.body.username,
 		password: await argon2.hash(req.body.password),
@@ -9,17 +12,12 @@ const Register = async (req, res) => {
 		bank_name: req.body.bank_name,
 		account_number: req.body.account_number,
 		account_name: req.body.account_name,
+		create_datetime : `${date} ${time}`
 	})
-	const config = {
-		headers: {
-			'X-Api-Key': '7lg4ZCujpS$PBm!OVwyBNyYs%KvnNt_6YkWI14L8u-No!lL6#ehQsZsaCTmEcvTk',
-			'Content-Type': 'application/json',
-		},
-	}
 	try {
-		const data = await axios.post('https://sheet.best/api/sheets/20fb8e0a-72b1-4246-b7c3-9fb830f0451a', obj, config)
-		if(data.status===200){
-			return res.status(201).json({status:"ok"})
+		const data = await axios.post(sheet_post.url, obj, sheet_post.config)
+		if (data.status === 200) {
+			return res.status(201).json({ status: 'created' })
 		}
 	} catch (err) {
 		return res.status(401).json({
