@@ -1,9 +1,9 @@
 const argon2 = require('argon2')
 const axios = require('axios')
-const {sheet_get} = require('../connect_service/google-sheet')
+const config = require('../connect_service/google-sheet')
 
 const Login = (req, res) => {
-	axios(sheet_get)
+	axios(config.sheet_get)
 		.then((response) => {
 			const user = response.data.filter((x) => x.username === req.body.username)
 			if (user.length > 0) {

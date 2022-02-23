@@ -1,6 +1,7 @@
 const argon2 = require('argon2')
-const axios = require('axios')
-const { sheet_post } = require('../connect_service/google-sheet')
+
+const config = require('../connect_service/google-sheet')
+const admin=require('firebase-admin');
 
 const Register = async (req, res) => {
 	let date = new Date().toLocaleDateString()
@@ -15,7 +16,7 @@ const Register = async (req, res) => {
 		create_datetime : `${date} ${time}`
 	})
 	try {
-		const data = await axios.post(sheet_post.url, obj, sheet_post.config)
+		const data = await config.post_to_sheet(obj)
 		if (data.status === 200) {
 			return res.status(201).json({ status: 'created' })
 		}

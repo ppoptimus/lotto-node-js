@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lotto-registry",
+  "private_key_id": "a30b46bec50550ef885003ef026c25aeac930930",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC4euE9920WC8Wp\nt3fQHDNdxaPuTBkMVok8niCMf8JUfqBwEc8eDYu8I65dcn1zJcIBU1bP3tsdjvSQ\nBRohNvdXxBzJk+t0tCaxnj0QjlW+gVjrd0Rus+HmPpRIvwHc1w2ectqzk9X8N89g\n9Pe9N/bewU14OmfxJLx9mNZMo+srv08+qOdepnmywozhyxyyr2ieUlGTtsHWpvjv\ndLYEZh2cUjCwlwEDCZ017uGEZiPuxLWvUz8UoZs+SQ8j/veCJhS9oxge0/8CrPtV\n8IOx7jZlbtX20BE4/DKZuY6YGDbVwSCpoBEkvFOkO6WlxU+wxaSKH7HaycSAeZRC\nyBdR0roFAgMBAAECggEAHAzMZccoJjN+XRAL9C/ththlKiJrppVxLYSKRMKs8iWv\newrXgrrNizr4/rVzVLL3h4sRRpnHQvx4ZtOXxa1yuLzAIc2k01cMZnJogjVvh9Vp\nXKLYXBAW4j2T/2b86gQln84tPyPUjr06V4Q34mSkMU+UBMVgsOkEjgD+CKOIlQXc\nQRscUEVlIoxFbdNK72x0tG7LIKj5pthMn6UJhBZLU7scayvNuTkI8XC6iFtZoPXz\nBoRrt0mKjP0H4epwiICrqM5TlfMsR59D7jDyANGQkJ4Svdg86wv2rlf+jIx2nlMq\nYv+XShcUi1SmnEW9OUluiK5E80YFnCb3mN1mwSd6SwKBgQD3RfX1V92oG1Ci5zkG\nI3/MHY2/aKSOZLyhv7+ksD4Ue1lLKgrJg79COer0Tf4ofuKV1URTYh1a8bTZH+1s\nQFF8leYBGZDy/2cdbuPjaoSyy2ZMlevKQihOS45qCSBZ3dkzsJp6b+nlIz1nz/0k\nd8XJb2UlSvM8JAgkzDVLOUc7wwKBgQC+/ZnL8HeO7B08I2iIFWu7ZOtosCcrSvy6\nI3C3+6u+YumSnq/Ikv8yxWf2EtCyRpsARUlxC9khxzsq1EE7GKBf48Mo787fojn6\nuVP2kxk0a1vnyc/FAawMfojfXESb2DJgCRvdB2yQ5IeWgd0t6knuFjDbub50inLA\nhloDpUH+lwKBgQDZyIN1X7r4yX3+zDmcH336T3k9wTNVuoGs0E5BBXzX2z/tBI1V\nqLS15n76Rwr3rbFxF9HCwuJp7AJFTWp18jwSx485HsRcUPgHo1gRPwq60ow6Hbz7\necM4GjHHUFxu6gbYEM4t0g2l46C8oyIokVjhLjxeWSHbsTx+9GBn7X3AswKBgFB9\nyKdufLS7RcbmlVNk07ZyXdQNCTTxsXkxHnwrkMH4JcApKKQ7b1oSYDIQ0+uOXhzL\nFpySBbx6nrD6K1OgmVZQQxuplWIimJTWLlCoxeKVrHIPV4ULo1rQqRaZaEDV6MUY\nkamhS1v1ND92E6UaLHYu3AB+U4oCH0KMXLtUlm+ZAoGARKdlN+c14Z0/aqpskxud\nU0DaxlXKMfrmt+oX2xm+uF1EQTsU7079Wqic8QEyrjG3c2w5VSELGPDWW6rtDgwM\nuqsToS9v7ldDczR0VnenDbZxc4Z5yn5SLhYrf6n0fa+WQgF5BmGWa4GB8q9e7iA5\nDZI2gvoIy9/cIoXXevPYFEE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-dmzub@lotto-registry.iam.gserviceaccount.com",
+  "client_id": "101514290802904613539",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-dmzub%40lotto-registry.iam.gserviceaccount.com"
+}
