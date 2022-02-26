@@ -1,14 +1,14 @@
 const express = require('express')
 const cors = require('cors')
-const jwt = require('jsonwebtoken');
-
-const Register = require('./modules/register')
-const Login = require('./modules/login')
 const app = express()
 app.use(cors())
 app.use(express.json())
 
-const mockup = require('./mockdata')
+const Register = require('./modules/autorizing/register')
+const Login = require('./modules/autorizing/login')
+const GetUser = require('./modules/controller/test-get-user')
+const GetAuthen = require('./modules/autorizing/authen')
+
 
 //#region ==running port==//
 app.listen(9000, () => {
@@ -26,4 +26,8 @@ app.post('/api/register', (req, res) => {
 
 app.post('/api/login', (req, res) => {
 	Login(req, res)
+})
+
+app.get('/api/user', GetAuthen, (req, res) => {
+	GetUser(req, res)
 })
